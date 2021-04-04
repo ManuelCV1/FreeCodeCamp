@@ -1,0 +1,185 @@
+Titulos (Headlines):
+
+Este elemento le informa al navegador sobre la estructura de tu sitio web.
+
+<h1> Para titulo Principal </h1>
+
+<h2> Para Subtitulos (h2,h3,h4...) </h2>
+
+
+
+Párrafos (paragraph):
+
+Los elementos p son el elemento preferido para el texto de los párrafos en los sitios web.
+
+<p> Texto del Parrafo </p>
+
+
+
+
+Relleno de Espacio con Texto Random:
+
+<p>lorem ipsum </p>
+
+
+
+Comentar en Html :
+
+<!-- Comentario ó Codigo que quiere desactivarse momentaneamente -->
+
+
+
+Descripción de Elementos HTML5 :
+
+HTML5 introduce etiquetas HTML más descriptivas. Estas incluyen main, header, footer, nav, video, article, section, entre otras.
+
+Estas etiquetas dan una estructura descriptiva a tu HTML, hacen que tu HTML sea más fácil de leer, ayudan con la Optimización de Motores de Búsqueda (SEO) y mejoran la accesibilidad.
+
+
+
+
+Elemento main (principal) html5 :
+
+Ayuda a los motores de búsqueda y otros desarrolladores a encontrar el contenido principal de tu página.
+
+
+<main>...contenido principal de la página...</main>
+
+
+
+
+
+
+Agregar Imagen al sitio Web :
+
+Puedes agregar imágenes a tu sitio web utilizando el elemento img, y apuntar a la URL de una imagen específica usando el atributo src.
+
+Todos los elementos img deben tener un atributo alt. El texto dentro de un atributo alt es utilizado por los lectores de pantalla para mejorar la accesibilidad y se muestra si la imagen falla en cargar.
+
+Note: Si la imagen es puramente decorativa, usar un atributo alt vacío es una buena práctica.
+
+
+<img src="https://www.Imagen Web.com/your-image.jpg" alt="Texto descriptivo alternativo">
+
+
+
+ 
+Enlace hacia una pagina externa con el elemento a (anchor):
+
+Los elementos a requieren un atributo href con la dirección web de destino. También necesitan un texto anchor.
+
+<a href="https://Link de pagina externa.org" target="_blank"> Texto anchor que direcciona a la pagina externa </a>
+
+target es un atributo opcional de etiqueta anchor que especifica dónde abrir el enlace. El valor _blank especifica abrir el enlace en una nueva pestaña.
+
+
+
+
+Enlace hacia sección interna con el elemento a (anchor):
+
+Para crear un enlace interno, asignas el atributo href de un enlace con un símbolo hash # más el valor del atributo id para el elemento al que deseas enlazar internamente, normalmente más abajo de la página. Luego necesitas agregar el mismo atributo id al elemento que estás enlazando. Un id es un atributo que describe un elemento de forma única.
+
+<a href="#nombre que identifica el elemento"> Texto que envia a la sección </a>
+
+<h2 id="nombre que idetifica el elemento"> Elemento que se quiere enlazar </h2>
+
+
+
+
+
+Anidar un elemento anchor dentro de un párrafo:
+
+Puedes anidar enlaces dentro de otros elementos de texto.
+
+<p>
+  Here's a <a target="_blank" href="http://freecodecamp.org"> link to freecodecamp.org</a> for you to follow.
+</p>
+
+
+El texto, link to freecodecamp.org, dentro de un elemento a se llama anchor text, y mostrará el enlace para hacer clic
+
+
+
+
+Crear un enlace muerto :
+
+A veces quieres agregar elementos a en tu sitio web antes de saber dónde se enlazarán, por ello se puede crear un enlace muerto asignando el valor de href con #.
+
+<a href="#" target="_blank">cat photos</a>
+
+
+
+
+Convertir una imagen en un enlace:
+
+Puedes convertir elementos en enlaces, anidándolos dentro de un elemento a.
+
+<a href="#"><img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera."></a>
+
+
+
+
+Crear una lista no ordenada (Unordered List):
+
+Las listas no ordenadas comienzan con un elemento <ul> de apertura, seguido de cualquier número de elementos <li>.
+
+<ul>
+  <li>milk</li>
+  <li>cheese</li>
+</ul>
+
+
+
+Crear una lista ordenada o numerada (Ordered List):
+
+Las listas ordenadas comienzan con un elemento de apertura <ol>, seguido de cualquier número de elementos <li>.
+
+<ol>
+  <li>Garfield</li>
+  <li>Sylvester</li>
+</ol>
+
+
+
+Crear un campo de Texto o formulario:
+
+Los elementos de entrada input son una forma conveniente de obtener información de tu usuario.
+Nota: Los elementos input se cierran solos.
+
+<input type="text">
+
+
+
+Agregar texto provisional a un campo de texto:
+
+El texto provisional es lo que se muestra en tu elemento de entrada input antes de que el usuario haya ingresado nada.
+
+<input type="text" placeholder="this is placeholder text">
+
+
+
+Crear un elemento formulario:
+
+Puedes construir formularios web que realmente envíen datos a un servidor usando sólo HTML puro. Puedes hacer esto especificando un atributo action en tu elemento form.
+
+<form action="/url-where-you-want-to-submit-form-data">
+  <input ...>
+</form>
+
+
+
+Agregar un botón de envío a un formulario:
+
+Agreguemos un botón submit a tu formulario. Al hacer clic en este botón se enviarán los datos de tu formulario a la URL especificada con el atributo action de tu formulario.
+
+<button type="submit">this button submits the form</button>
+
+
+
+Uso de HTML5 para requerir un campo:
+
+Puedes requerir campos específicos de un formulario para que tu usuario no pueda enviarlo hasta que no los haya rellenado. Si deseas hacer obligatorio un campo de entrada de texto, puedes agregar el atributo required dentro de tu elemento input
+
+<input type="text" required>
+
+
